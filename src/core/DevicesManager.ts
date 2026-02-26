@@ -3,8 +3,8 @@ import { DeviceRing } from "./DeviceRing";
 
 export class DevicesManager extends THREE.Group {
   private rings: DeviceRing[] = [];
-  private readonly RING_START_RADIUS = 1.62;
-  private readonly RING_GAP = 0.02;
+  private readonly RING_START_RADIUS = 1.72;
+  private readonly RING_GAP = 0.05;
 
   constructor(devices: number[]) {
     super();

@@ -3,7 +3,7 @@ import vertexShader from "../scene/shaders/deviceRing.vertex.glsl?raw";
 import fragmentShader from "../scene/shaders/deviceRing.fragment.glsl?raw";
 
 export class DeviceRing extends THREE.Mesh {
-  private static readonly RING_THICKNESS = 0.01;
+  private static readonly RING_THICKNESS = 0.02;
 
   constructor(radius: number, progress: number) {
     const geometry = new THREE.RingGeometry(

@@ -22,15 +22,6 @@ html, body {
     overflow: hidden;
 }
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-    z-index: 1;
-}
-
 .ui-overlay {
     position: absolute;
     z-index: 10;
