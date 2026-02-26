@@ -14,6 +14,9 @@ A high-performance 3D data visualization built with **Three.js**, **TypeScript**
 * **Dynamic Rings**: Shader-based progress rings featuring "Sun Mode" glow and additive blending.
 * **Architecture**: Complete separation of concerns between core logic, 3D management, and GPU shaders.
 * **FOUC Prevention**: Integrated loading system ensures the UI only reveals once the 3D scene is rendered.
+* **Reactive Agitation**: Movement and rotation speed of the system dynamically scales based on the center score—lower scores increase agitation while higher scores remain calm.
+* **Sun Mode Progress**: Progress rings use a dual-tone shader system (Solar Gold vs. Electric Purple) to represent device completeness at a glance.
+* **Bi-directional Orbit**: Rings utilize alternating clockwise and anticlockwise rotation to create visual depth and a more organic "Sun" energy.
 
 ## 📁 Project Structure
 ```text
@@ -38,6 +41,10 @@ Precision Timing: Replaced frame-dependent loops with performance.now() delta ti
 Static Initialization: Utilized static class properties to handle Three.js geometry logic cleanly before class instantiation.
 
 Performance: Optimized the environment using BufferGeometry and PointsMaterial to maintain 60FPS on mobile and desktop.
+
+GPU-Accelerated Masking: Utilized radial distance functions and smoothstep in fragment shaders to create sharp, luminous "Sun" beams without increasing geometry complexity.
+
+Additive Blending: Leveraged THREE.AdditiveBlending and high-intensity RGB multipliers to achieve a "blown-out" light effect that mimics high-end post-processing.
 
 ⚡ Development
 
