@@ -1,12 +1,31 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Orb Visualizer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Orb Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    .ui-overlay, #loader {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="ui-overlay">
+      <div class="score">72</div>
+      <div class="label">Impact modéré</div>
+      <div class="badge">
+        <span class="percentage">+6%</span>
+        <span class="trend-text">cette semaine</span>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
