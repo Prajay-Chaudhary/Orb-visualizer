@@ -2,14 +2,14 @@
 
 A high-performance 3D data visualization built with **Three.js**, **TypeScript**, and **GLSL**. This project features an organic, reactive central orb surrounded by dynamic progress rings representing device status.
 
-## 🛠 Tech Stack
+## Tech Stack
 * **Three.js**: 3D Engine for WebGL rendering.
 * **TypeScript**: Type-safe application logic.
 * **Vite**: Modern build tool for high-speed development.
 * **Vite-Plugin-GLSL**: Native modular support for `.glsl` files.
 * **Post-Processing**: UnrealBloomPass for atmospheric radiance.
 
-## 🚀 Key Features
+## Key Features
 * **Reactive Orb**: Custom GLSL shader with vertex displacement that "agitates" based on completeness scores.
 * **Dynamic Rings**: Shader-based progress rings featuring "Sun Mode" glow and additive blending.
 * **Architecture**: Complete separation of concerns between core logic, 3D management, and GPU shaders.
@@ -30,7 +30,7 @@ src/
 └── style.css              # UI overlay and cinematic layout styling
 ```
 
-## 🛠 Technical Implementation
+## Technical Implementation
 Modular Shaders: Leveraged vite-plugin-glsl to extract GLSL logic from TypeScript, improving maintainability and readability.
 
 Precision Timing: Replaced frame-dependent loops with performance.now() delta timing for consistent animation across 60Hz to 144Hz displays.
@@ -40,13 +40,21 @@ Static Initialization: Utilized static class properties to handle Three.js geome
 Performance: Optimized the environment using BufferGeometry and PointsMaterial to maintain 60FPS on mobile and desktop.
 
 ⚡ Development
-### 1. Install dependencies:
+
+### 1. Clone the repository:
+
+```text
+git clone https://github.com/Prajay-Chaudhary/Orb-visualizer.git
+cd Orb-visualizer
+```
+
+### 2. Install dependencies:
 
 ```text
 npm install
 ```
 
-### 2. Run development server:
+### 3. Run development server:
 
 ```text
 npm run dev
